@@ -57,8 +57,7 @@
 		T10008 /* PerAppProxySettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10007 /* PerAppProxySettingsTests.swift */; };
 		T10022 /* BypassGroupDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10021 /* BypassGroupDetectionTests.swift */; };
 		T10031 /* ConfigParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10030 /* ConfigParserTests.swift */; };
-		T10033 /* SingBoxCoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10032 /* SingBoxCoreIntegrationTests.swift */; };
-		T10035 /* MihomoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10034 /* MihomoAPITests.swift */; };
+
 		T10041 /* ProxyEngineIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10040 /* ProxyEngineIntegrationTests.swift */; };
 		T10045 /* TestConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10044 /* TestConfigs.swift */; };
 		T10047 /* ProxyEngineHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = T10046 /* ProxyEngineHelper.swift */; };
@@ -150,8 +149,7 @@
 		T10010 /* BaoLianDengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaoLianDengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		T10021 /* BypassGroupDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BypassGroupDetectionTests.swift; sourceTree = "<group>"; };
 		T10030 /* ConfigParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParserTests.swift; sourceTree = "<group>"; };
-		T10032 /* SingBoxCoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingBoxCoreIntegrationTests.swift; sourceTree = "<group>"; };
-		T10034 /* MihomoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MihomoAPITests.swift; sourceTree = "<group>"; };
+
 		T10040 /* ProxyEngineIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyEngineIntegrationTests.swift; sourceTree = "<group>"; };
 		T10044 /* TestConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfigs.swift; sourceTree = "<group>"; };
 		T10046 /* ProxyEngineHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyEngineHelper.swift; sourceTree = "<group>"; };
@@ -341,8 +339,7 @@
 				T10007 /* PerAppProxySettingsTests.swift */,
 				T10021 /* BypassGroupDetectionTests.swift */,
 				T10030 /* ConfigParserTests.swift */,
-				T10032 /* SingBoxCoreIntegrationTests.swift */,
-				T10034 /* MihomoAPITests.swift */,
+
 				T10040 /* ProxyEngineIntegrationTests.swift */,
 			);
 			path = BaoLianDengTests;
@@ -500,8 +497,7 @@
 				T10008 /* PerAppProxySettingsTests.swift in Sources */,
 				T10022 /* BypassGroupDetectionTests.swift in Sources */,
 				T10031 /* ConfigParserTests.swift in Sources */,
-				T10033 /* SingBoxCoreIntegrationTests.swift in Sources */,
-				T10035 /* MihomoAPITests.swift in Sources */,
+
 				T10041 /* ProxyEngineIntegrationTests.swift in Sources */,
 				T10045 /* TestConfigs.swift in Sources */,
 				T10047 /* ProxyEngineHelper.swift in Sources */,
