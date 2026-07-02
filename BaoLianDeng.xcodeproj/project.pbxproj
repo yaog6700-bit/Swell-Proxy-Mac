@@ -614,7 +614,7 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaoLianDeng.app/Contents/MacOS/BaoLianDeng";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swell Proxy.app/Contents/MacOS/Swell Proxy";
 			};
 			name = Debug;
 		};
@@ -631,7 +631,7 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaoLianDeng.app/Contents/MacOS/BaoLianDeng";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swell Proxy.app/Contents/MacOS/Swell Proxy";
 			};
 			name = Release;
 		};

@@ -32,7 +32,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func materialChanged() {
-        applyMaterialToAllWindows()
+        DispatchQueue.main.async {
+            self.applyMaterialToAllWindows()
+        }
     }
 
     func applyMaterialToAllWindows() {
