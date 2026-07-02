@@ -1,0 +1,2318 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    " " : {
+
+    },
+    "   %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "   %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "   ⚡️ 自动选择 (URL-Test)" : {
+
+    },
+    "   全局代理 (Global)" : {
+
+    },
+    "   直接连接 (Direct)" : {
+
+    },
+    "   规则分流 (Rule)" : {
+
+    },
+    "---" : {
+
+    },
+    ":%lld" : {
+
+    },
+    "·" : {
+
+    },
+    "(按住 Shift 键+滚轮横向滑动)" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@:%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@:%2$@"
+          }
+        }
+      }
+    },
+    "%@:%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@:%2$lld"
+          }
+        }
+      }
+    },
+    "%lld active connections" : {
+
+    },
+    "%lld ms" : {
+
+    },
+    "%lld nodes" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个节点"
+          }
+        }
+      }
+    },
+    "%lld proxy / %lld total" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 代理 / %lld 总计"
+          }
+        }
+      }
+    },
+    "%lld 条规则" : {
+
+    },
+    "%lld 条连接" : {
+
+    },
+    "• 订阅" : {
+
+    },
+    "↑" : {
+
+    },
+    "↑ 上传" : {
+
+    },
+    "↓" : {
+
+    },
+    "↓ 下载" : {
+
+    },
+    "⚡️ 自动选择" : {
+
+    },
+    "⚪️ Swell Proxy：未连接" : {
+
+    },
+    "✓ %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "✓ %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "✓ ⚡️ 自动选择 (URL-Test)" : {
+
+    },
+    "✓ 全局代理 (Global)" : {
+
+    },
+    "✓ 直接连接 (Direct)" : {
+
+    },
+    "✓ 规则分流 (Rule)" : {
+
+    },
+    "🔒 锁定并隐藏" : {
+
+    },
+    "🟡 Swell Proxy：正在断开..." : {
+
+    },
+    "🟡 Swell Proxy：正在连接..." : {
+
+    },
+    "🟢 Swell Proxy：已连接" : {
+
+    },
+    "26 ms" : {
+
+    },
+    "2022-blake3-aes-128-gcm" : {
+
+    },
+    "2022-blake3-aes-256-gcm" : {
+
+    },
+    "2022-blake3-chacha20-poly1305" : {
+
+    },
+    "About" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "About BaoLianDeng" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于 BaoLianDeng"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活跃"
+          }
+        }
+      }
+    },
+    "Active Connections" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活跃连接"
+          }
+        }
+      }
+    },
+    "Active connections will appear here" : {
+
+    },
+    "Add" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
+          }
+        }
+      }
+    },
+    "Add App" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加应用"
+          }
+        }
+      }
+    },
+    "Add Node" : {
+
+    },
+    "Add Proxy Group" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加代理组"
+          }
+        }
+      }
+    },
+    "Add proxy name" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加代理名称"
+          }
+        }
+      }
+    },
+    "Add Rule" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加规则"
+          }
+        }
+      }
+    },
+    "Add Subscription" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加订阅"
+          }
+        }
+      }
+    },
+    "aes-128-gcm" : {
+
+    },
+    "aes-256-gcm" : {
+
+    },
+    "AI 解锁状态" : {
+
+    },
+    "auto" : {
+
+    },
+    "BaoLianDeng" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BaoLianDeng"
+          }
+        }
+      }
+    },
+    "BBR" : {
+
+    },
+    "Block" : {
+
+    },
+    "Build" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "构建号"
+          }
+        }
+      }
+    },
+    "Bypass Listed Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绕过列表中的应用"
+          }
+        }
+      }
+    },
+    "Bytes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "字节"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Cannot access file" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法访问文件"
+          }
+        }
+      }
+    },
+    "chacha20-ietf-poly1305" : {
+
+    },
+    "chacha20-poly1305" : {
+
+    },
+    "Close All" : {
+
+    },
+    "Close Connection" : {
+
+    },
+    "Config" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置"
+          }
+        }
+      }
+    },
+    "Config Editor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置编辑器"
+          }
+        }
+      }
+    },
+    "Connect the VPN to start attributing traffic to subscriptions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接 VPN 后开始统计各订阅的流量"
+          }
+        }
+      }
+    },
+    "Connect VPN to view connections" : {
+
+    },
+    "Connected" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接"
+          }
+        }
+      }
+    },
+    "Connecting..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接中..."
+          }
+        }
+      }
+    },
+    "Connection" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接"
+          }
+        }
+      }
+    },
+    "Connections" : {
+
+    },
+    "CUBIC" : {
+
+    },
+    "Current Session (Proxy Only)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前会话（仅代理）"
+          }
+        }
+      }
+    },
+    "Daily Proxy Traffic (Last 30 Days)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日代理流量（近 30 天）"
+          }
+        }
+      }
+    },
+    "Data" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据"
+          }
+        }
+      }
+    },
+    "Day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日"
+          }
+        }
+      }
+    },
+    "Debug" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        }
+      }
+    },
+    "Direct" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直连"
+          }
+        }
+      }
+    },
+    "Direction" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方向"
+          }
+        }
+      }
+    },
+    "Disconnected" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未连接"
+          }
+        }
+      }
+    },
+    "Disconnecting..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "断开中..."
+          }
+        }
+      }
+    },
+    "Domain" : {
+
+    },
+    "Domain Keyword" : {
+
+    },
+    "Domain Suffix" : {
+
+    },
+    "Download" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下载"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑"
+          }
+        }
+      }
+    },
+    "Edit Rule" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑规则"
+          }
+        }
+      }
+    },
+    "Edit Subscription" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑订阅"
+          }
+        }
+      }
+    },
+    "Enable Network Extension" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用网络扩展"
+          }
+        }
+      }
+    },
+    "Enable Per-App Proxy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用应用分流"
+          }
+        }
+      }
+    },
+    "Enter a subscription URL to import proxy nodes. Supported formats: Clash YAML, base64-encoded links." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入订阅链接以导入代理节点。支持格式：Clash YAML、Base64 编码链接。"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
+          }
+        }
+      }
+    },
+    "Failed to fetch %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取 %@ 失败"
+          }
+        }
+      }
+    },
+    "Failed to read file: %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取文件失败：%@"
+          }
+        }
+      }
+    },
+    "fallback" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fallback"
+          }
+        }
+      }
+    },
+    "Fetched %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已获取 %@"
+          }
+        }
+      }
+    },
+    "File picker error: %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件选择器错误：%@"
+          }
+        }
+      }
+    },
+    "Filter by host, rule, or chain" : {
+
+    },
+    "General" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
+          }
+        }
+      }
+    },
+    "Global" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局"
+          }
+        }
+      }
+    },
+    "Global Proxy powered by Mihomo" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基于 Mihomo 的全局代理"
+          }
+        }
+      }
+    },
+    "Group Info" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分组信息"
+          }
+        }
+      }
+    },
+    "Group Name" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分组名称"
+          }
+        }
+      }
+    },
+    "gRPC Service Name" : {
+
+    },
+    "High-performance proxy client powered by sing-box" : {
+
+    },
+    "Home" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
+          }
+        }
+      }
+    },
+    "Host 头信息" : {
+
+    },
+    "https://..." : {
+
+    },
+    "Import Config File" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入配置文件"
+          }
+        }
+      }
+    },
+    "Imported %@ (%lld nodes)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Imported %1$@ (%2$lld nodes)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已导入 %1$@（%2$lld 个节点）"
+          }
+        }
+      }
+    },
+    "Inactive" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未活跃"
+          }
+        }
+      }
+    },
+    "Info" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信息"
+          }
+        }
+      }
+    },
+    "Information" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信息"
+          }
+        }
+      }
+    },
+    "Interval" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "间隔"
+          }
+        }
+      }
+    },
+    "Invalid: %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无效：%@"
+          }
+        }
+      }
+    },
+    "IP CIDR" : {
+
+    },
+    "IP 网络状态" : {
+
+    },
+    "Language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语言"
+          }
+        }
+      }
+    },
+    "License" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "许可证"
+          }
+        }
+      }
+    },
+    "Links" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "链接"
+          }
+        }
+      }
+    },
+    "load-balance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "load-balance"
+          }
+        }
+      }
+    },
+    "Local Config" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本地配置"
+          }
+        }
+      }
+    },
+    "Log Level" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志级别"
+          }
+        }
+      }
+    },
+    "Manage Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理应用"
+          }
+        }
+      }
+    },
+    "MATCH (catch-all)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MATCH（全匹配）"
+          }
+        }
+      }
+    },
+    "MB" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MB"
+          }
+        }
+      }
+    },
+    "Mihomo Documentation" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mihomo 文档"
+          }
+        }
+      }
+    },
+    "MIT License" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MIT 许可证"
+          }
+        }
+      }
+    },
+    "Mode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "模式"
+          }
+        }
+      }
+    },
+    "Monthly Summary" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月度汇总"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名称"
+          }
+        }
+      }
+    },
+    "NATIVE" : {
+
+    },
+    "Network Extension Enabled" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网络扩展已启用"
+          }
+        }
+      }
+    },
+    "No Active Connections" : {
+
+    },
+    "No Data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无数据"
+          }
+        }
+      }
+    },
+    "No log yet — toggle the VPN to generate logs." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无日志 - 开启 VPN 后将生成日志。"
+          }
+        }
+      }
+    },
+    "No Proxy Groups" : {
+
+    },
+    "No proxy nodes configured. Click '+' to add one." : {
+
+    },
+    "No Subscriptions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无订阅"
+          }
+        }
+      }
+    },
+    "No Usage Data" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无用量数据"
+          }
+        }
+      }
+    },
+    "no-resolve" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "no-resolve"
+          }
+        }
+      }
+    },
+    "none" : {
+
+    },
+    "Not Configured" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未配置"
+          }
+        }
+      }
+    },
+    "Not Connected" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未连接"
+          }
+        }
+      }
+    },
+    "OFFLINE" : {
+
+    },
+    "OK" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        }
+      }
+    },
+    "Per-App Proxy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用分流"
+          }
+        }
+      }
+    },
+    "Powered by Core (Mihomo / Xray)" : {
+
+    },
+    "Proxies (%lld)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "代理 (%lld)"
+          }
+        }
+      }
+    },
+    "Proxy" : {
+
+    },
+    "Proxy Groups" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "代理组"
+          }
+        }
+      }
+    },
+    "Proxy Only Listed Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅代理列表中的应用"
+          }
+        }
+      }
+    },
+    "QUIC" : {
+
+    },
+    "Read Only" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只读"
+          }
+        }
+      }
+    },
+    "Reality Public Key" : {
+
+    },
+    "Reality Short ID" : {
+
+    },
+    "Reconnecting..." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新连接中..."
+          }
+        }
+      }
+    },
+    "Refresh" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新"
+          }
+        }
+      }
+    },
+    "Reload Complete" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新完成"
+          }
+        }
+      }
+    },
+    "Reset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置"
+          }
+        }
+      }
+    },
+    "Reset All" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部重置"
+          }
+        }
+      }
+    },
+    "Reset all subscription usage data?" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置所有订阅用量数据？"
+          }
+        }
+      }
+    },
+    "Reset Default" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复默认"
+          }
+        }
+      }
+    },
+    "Routing" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路由"
+          }
+        }
+      }
+    },
+    "Rule" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "规则"
+          }
+        }
+      }
+    },
+    "Rules" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "规则"
+          }
+        }
+      }
+    },
+    "Rules (%lld)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "规则 (%lld)"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        }
+      }
+    },
+    "Saved" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已保存"
+          }
+        }
+      }
+    },
+    "Search apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索应用"
+          }
+        }
+      }
+    },
+    "Search proxy groups" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索代理组"
+          }
+        }
+      }
+    },
+    "Search rules" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索规则"
+          }
+        }
+      }
+    },
+    "select" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "select"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "Silent" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静默"
+          }
+        }
+      }
+    },
+    "sing-box Documentation" : {
+
+    },
+    "Source" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "来源"
+          }
+        }
+      }
+    },
+    "Source Code" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "源代码"
+          }
+        }
+      }
+    },
+    "Status" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状态"
+          }
+        }
+      }
+    },
+    "Subscription Info" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅信息"
+          }
+        }
+      }
+    },
+    "Subscriptions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅"
+          }
+        }
+      }
+    },
+    "Swell Core" : {
+
+    },
+    "Swell Mini" : {
+
+    },
+    "Swell Proxy" : {
+
+    },
+    "Swell Proxy (macOS)" : {
+
+    },
+    "System Default" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟随系统"
+          }
+        }
+      }
+    },
+    "System Extension" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统扩展"
+          }
+        }
+      }
+    },
+    "System Settings has been opened.\n\nPlease go to Network Extensions and toggle on Swell Proxy to enable the VPN." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统设置已打开。\n\n请前往网络扩展并开启 Swell Proxy 以启用 VPN。"
+          }
+        }
+      }
+    },
+    "Tap + to add a subscription URL" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击 + 添加订阅链接"
+          }
+        }
+      }
+    },
+    "Target" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标"
+          }
+        }
+      }
+    },
+    "Test delay for all nodes" : {
+
+    },
+    "Test Latency" : {
+
+    },
+    "Test URL" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试链接"
+          }
+        }
+      }
+    },
+    "This will permanently clear the usage counters for all subscriptions." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这将永久清除所有订阅的用量计数。"
+          }
+        }
+      }
+    },
+    "timeout" : {
+
+    },
+    "Total" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总计"
+          }
+        }
+      }
+    },
+    "Traffic & Data" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "流量与数据"
+          }
+        }
+      }
+    },
+    "Traffic Activity" : {
+
+    },
+    "Traffic data will appear here when VPN is active" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VPN 连接后将在此显示流量数据"
+          }
+        }
+      }
+    },
+    "Tunnel Log" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志"
+          }
+        }
+      }
+    },
+    "Type" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "类型"
+          }
+        }
+      }
+    },
+    "Uninstall System Extension" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卸载系统扩展"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知"
+          }
+        }
+      }
+    },
+    "Updated %@ (%lld nodes)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已更新 %@（%lld 个节点）"
+          }
+        }
+      }
+    },
+    "Upload" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上传"
+          }
+        }
+      }
+    },
+    "URL" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "链接"
+          }
+        }
+      }
+    },
+    "url-test" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "url-test"
+          }
+        }
+      }
+    },
+    "Usage by Subscription" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按订阅统计用量"
+          }
+        }
+      }
+    },
+    "Valid YAML" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YAML 有效"
+          }
+        }
+      }
+    },
+    "Value" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "值"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
+          }
+        }
+      }
+    },
+    "Version 1.0.0 (Build 2026)" : {
+
+    },
+    "vless:// 或 trojan:// ..." : {
+
+    },
+    "VPN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VPN"
+          }
+        }
+      }
+    },
+    "VPN Not Connected" : {
+
+    },
+    "Warning" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        }
+      }
+    },
+    "WebSocket / HTTP 路径" : {
+
+    },
+    "一键订阅初始化" : {
+
+    },
+    "上一步" : {
+
+    },
+    "上传 Mbps" : {
+
+    },
+    "下一步" : {
+
+    },
+    "下载 Mbps" : {
+
+    },
+    "主页" : {
+
+    },
+    "二进制 SRS 规则集" : {
+
+    },
+    "仅 IPv4" : {
+
+    },
+    "仅 IPv6" : {
+
+    },
+    "从剪贴板一键导入" : {
+
+    },
+    "从左侧列表中选择节点以查看\n详细配置参数、出口 IP 及 AI 解锁状态。" : {
+
+    },
+    "从未更新" : {
+
+    },
+    "代理 (Proxy)" : {
+
+    },
+    "代理连接后将自动抓取并展示近期的网络流量。" : {
+
+    },
+    "优先 IPv4" : {
+
+    },
+    "优先 IPv6" : {
+
+    },
+    "会话流量：%@" : {
+
+    },
+    "传输协议 (Transport)" : {
+
+    },
+    "使用手机/其它代理软件扫码导入" : {
+
+    },
+    "例如 xtls-rprx-vision" : {
+
+    },
+    "例如：香港 HKT 家宽" : {
+
+    },
+    "保存" : {
+
+    },
+    "保存节点" : {
+
+    },
+    "全局代理" : {
+
+    },
+    "全局路由" : {
+
+    },
+    "全局隐私保护已开启" : {
+
+    },
+    "关闭" : {
+
+    },
+    "关闭迷你窗口" : {
+
+    },
+    "最后更新: %@" : {
+
+    },
+    "出口 IP" : {
+
+    },
+    "出站节点" : {
+
+    },
+    "出站行为" : {
+
+    },
+    "分享链接 (URI)" : {
+
+    },
+    "分流模式" : {
+
+    },
+    "分流规则" : {
+
+    },
+    "切换主题 (%@)" : {
+
+    },
+    "切换至迷你窗口" : {
+
+    },
+    "删除" : {
+
+    },
+    "删除订阅" : {
+
+    },
+    "加载图标库..." : {
+
+    },
+    "匹配值" : {
+
+    },
+    "匹配类型" : {
+
+    },
+    "单条策略例外" : {
+
+    },
+    "原生毛玻璃" : {
+
+    },
+    "取消" : {
+
+    },
+    "只显示收藏" : {
+
+    },
+    "名称" : {
+
+    },
+    "启动代理" : {
+
+    },
+    "在网络底层过滤隐私广告追踪器，提供清爽浏览环境。" : {
+
+    },
+    "域名 / SNI" : {
+
+    },
+    "域名或 IP 地址" : {
+
+    },
+    "基础设置" : {
+
+    },
+    "备注名称（可选）" : {
+
+    },
+    "复制 IP" : {
+
+    },
+    "复制主机名" : {
+
+    },
+    "复制分享链接" : {
+
+    },
+    "复制域名/IP" : {
+
+    },
+    "复制连接信息" : {
+
+    },
+    "大小" : {
+
+    },
+    "大陆流量直接连接不走代理，极大节省您的资源包。" : {
+
+    },
+    "如 https://1.1.1.1/dns-query" : {
+
+    },
+    "完成" : {
+
+    },
+    "实时监控并分析经过本地代理引擎的所有网络请求" : {
+
+    },
+    "导入失败" : {
+
+    },
+    "将自动拉取并导入订阅中的全部节点" : {
+
+    },
+    "已复制到剪贴板" : {
+
+    },
+    "已暂停捕获" : {
+
+    },
+    "已激活" : {
+
+    },
+    "已连接" : {
+
+    },
+    "已选择" : {
+
+    },
+    "延迟" : {
+
+    },
+    "开启代理连接" : {
+
+    },
+    "开启全局垃圾广告过滤 (Ad-Blocking)" : {
+
+    },
+    "开启应用级分流后，可指定哪些 macOS 应用程序必须经过代理，或哪些应用直接连接。" : {
+
+    },
+    "开始捕获" : {
+
+    },
+    "当前节点：%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "当前节点：%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "当前节点服务器" : {
+
+    },
+    "恢复主窗口" : {
+
+    },
+    "我们已为您预设好最佳的分流策略，让您的网络更加清爽、飞速。" : {
+
+    },
+    "或者" : {
+
+    },
+    "或者手动输入规则（每行一条）：" : {
+
+    },
+    "手动替换本地核心文件" : {
+
+    },
+    "手动配置节点" : {
+
+    },
+    "打开设置" : {
+
+    },
+    "拦截 (Block)" : {
+
+    },
+    "搜索域名或 IP..." : {
+
+    },
+    "搜索服务器..." : {
+
+    },
+    "支持 VLESS、Trojan、Shadowsocks 等协议的分享链接。你可以直接从系统剪贴板一键导入，或者在下方手动粘贴链接。" : {
+
+    },
+    "断开代理" : {
+
+    },
+    "断开代理连接" : {
+
+    },
+    "无可用节点" : {
+
+    },
+    "无法生成二维码" : {
+
+    },
+    "显示主窗口" : {
+
+    },
+    "智能分流" : {
+
+    },
+    "智能分流与过滤" : {
+
+    },
+    "智能应用与自定义策略" : {
+
+    },
+    "暂停" : {
+
+    },
+    "暂无活动连接" : {
+
+    },
+    "暂无网络请求记录" : {
+
+    },
+    "暂无自定义规则" : {
+
+    },
+    "暂无订阅" : {
+
+    },
+    "更新 Geo 路由数据文件" : {
+
+    },
+    "更新成功" : {
+
+    },
+    "更新订阅" : {
+
+    },
+    "服务器" : {
+
+    },
+    "服务器节点" : {
+
+    },
+    "未连接" : {
+
+    },
+    "未选择服务器" : {
+
+    },
+    "本机设备" : {
+
+    },
+    "标准纯色" : {
+
+    },
+    "检查更新" : {
+
+    },
+    "欢迎开启 Swell Proxy" : {
+
+    },
+    "正在更新..." : {
+
+    },
+    "正在连接..." : {
+
+    },
+    "活动连接" : {
+
+    },
+    "活跃" : {
+
+    },
+    "活跃连接：%lld 条" : {
+
+    },
+    "浅色" : {
+
+    },
+    "测试延迟" : {
+
+    },
+    "深色" : {
+
+    },
+    "添加" : {
+
+    },
+    "添加分流规则" : {
+
+    },
+    "添加规则" : {
+
+    },
+    "添加规则集" : {
+
+    },
+    "添加订阅" : {
+
+    },
+    "清空" : {
+
+    },
+    "点击右上角「添加规则」来创建例外分流规则。" : {
+
+    },
+    "状态" : {
+
+    },
+    "用户名 (Username)" : {
+
+    },
+    "用户密码" : {
+
+    },
+    "用户的 UUID" : {
+
+    },
+    "留空则使用链接域名" : {
+
+    },
+    "目标主机" : {
+
+    },
+    "直接连接" : {
+
+    },
+    "直连 (Direct)" : {
+
+    },
+    "确定" : {
+
+    },
+    "立即导出" : {
+
+    },
+    "立即开启" : {
+
+    },
+    "立即重置" : {
+
+    },
+    "端口号 (例如 443)" : {
+
+    },
+    "管理订阅" : {
+
+    },
+    "类型" : {
+
+    },
+    "粘贴您的订阅链接或单个节点分享链接，起步即飞（可跳过）。" : {
+
+    },
+    "系统代理" : {
+
+    },
+    "系统代理处于活动状态" : {
+
+    },
+    "系统代理已禁用" : {
+
+    },
+    "系统设置" : {
+
+    },
+    "绕过局域网与中国大陆 (Bypass CN)" : {
+
+    },
+    "编辑" : {
+
+    },
+    "编辑代理节点" : {
+
+    },
+    "耗时" : {
+
+    },
+    "自动 (如 223.5.5.5)" : {
+
+    },
+    "自动从可用节点中选择延迟最低的节点。" : {
+
+    },
+    "自动优选 (Auto Select)" : {
+
+    },
+    "自动检测：识别到您位于 中国大陆，已自动为您预设直连绕过规则。" : {
+
+    },
+    "自动检测：识别到您位于 海外地区，可按需配置直连规则。" : {
+
+    },
+    "自动选择节点" : {
+
+    },
+    "自定义分流规则" : {
+
+    },
+    "规则" : {
+
+    },
+    "规则集明细 (共 %lld 条)" : {
+
+    },
+    "解析并保存" : {
+
+    },
+    "解锁" : {
+
+    },
+    "订阅链接" : {
+
+    },
+    "认证与安全" : {
+
+    },
+    "设置" : {
+
+    },
+    "请输入隐私密码解锁配置和节点信息" : {
+
+    },
+    "请选择节点" : {
+
+    },
+    "超时" : {
+
+    },
+    "跟随系统" : {
+
+    },
+    "输入密码" : {
+
+    },
+    "输入隐私密码..." : {
+
+    },
+    "近期请求" : {
+
+    },
+    "远端订阅: %@" : {
+
+    },
+    "远端订阅链接 (可选，填写后将自动从网络拉取)" : {
+
+    },
+    "连接中..." : {
+
+    },
+    "连接拓扑" : {
+
+    },
+    "退出 Swell Proxy" : {
+
+    },
+    "选择图标" : {
+
+    },
+    "选择文件" : {
+
+    },
+    "通过分享链接导入" : {
+
+    },
+    "配置个性化直连、代理或拦截策略，优先级高于默认的分流包" : {
+
+    },
+    "配置智能分流拦截规则，支持应用策略与自定义规则集。" : {
+
+    },
+    "高平稳、极速的次世代透明代理客户端。\n在这里开启您的智能网络飞跃之旅。" : {
+
+    }
+  },
+  "version" : "1.0"
+}

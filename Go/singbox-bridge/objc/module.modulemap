@@ -1,0 +1,5 @@
+module SingBoxCore {
+    header "SingBoxCore.h"
+    link "SingBoxCore"
+    export *
+}

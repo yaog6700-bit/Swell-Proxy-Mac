@@ -1,0 +1,7 @@
+BaoLianDeng v5.0
+
+- PKG installer for streamlined installation with system extension approval
+- Fix transparent proxy network rules for macOS 15+ compatibility
+- Improved VPN manager robustness: prevent duplicate configs and activation race conditions
+- Sidebar navigation with toolbar node display
+- Per-app proxy with search

@@ -1,0 +1,146 @@
+# Copyright (c) 2026 Max Lv <max.c.lv@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-framework:
+    name: Build Go Framework
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+          cache-dependency-path: Go/mihomo-bridge/go.sum
+
+      - name: Build MihomoCore.xcframework (macOS)
+        run: make framework-macos
+
+      - name: Upload framework artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MihomoCore.xcframework
+          path: Framework/MihomoCore.xcframework
+          retention-days: 7
+
+  build-app:
+    name: Build macOS App
+    runs-on: macos-15
+    needs: build-framework
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download framework artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: MihomoCore.xcframework
+          path: Framework/MihomoCore.xcframework
+
+      - name: Create Local.xcconfig
+        run: touch Local.xcconfig
+
+      - name: Provision Firebase config
+        env:
+          FIREBASE_PLIST_BASE64: ${{ secrets.FIREBASE_PLIST_BASE64 }}
+        run: scripts/provision-firebase.sh
+
+      - name: Build
+        run: |
+          xcodebuild build \
+            -project BaoLianDeng.xcodeproj \
+            -scheme BaoLianDeng \
+            -configuration ${{ matrix.configuration }} \
+            -destination 'generic/platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO | xcpretty && exit ${PIPESTATUS[0]}
+
+  test:
+    name: Unit Tests
+    runs-on: macos-15
+    needs: build-framework
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download framework artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: MihomoCore.xcframework
+          path: Framework/MihomoCore.xcframework
+
+      - name: Create Local.xcconfig
+        run: touch Local.xcconfig
+
+      - name: Provision Firebase config
+        env:
+          FIREBASE_PLIST_BASE64: ${{ secrets.FIREBASE_PLIST_BASE64 }}
+        run: scripts/provision-firebase.sh
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -project BaoLianDeng.xcodeproj \
+            -scheme BaoLianDeng \
+            -configuration Debug \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            -only-testing:BaoLianDengTests \
+            -skip-testing:BaoLianDengTests/ProxyEngineIntegrationTests | xcpretty && exit ${PIPESTATUS[0]}
+
+      - name: Run Integration Tests
+        run: |
+          xcodebuild test \
+            -project BaoLianDeng.xcodeproj \
+            -scheme BaoLianDeng \
+            -configuration Debug \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            -only-testing:BaoLianDengTests/ProxyEngineIntegrationTests | xcpretty && exit ${PIPESTATUS[0]}
+
+  swiftlint:
+    name: SwiftLint
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run SwiftLint
+        run: |
+          if command -v swiftlint &> /dev/null; then
+            swiftlint lint --strict --reporter github-actions-logging
+          else
+            echo "SwiftLint not installed, skipping"
+          fi

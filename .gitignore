@@ -1,0 +1,67 @@
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserdata
+*.xcworkspace
+!*.xcodeproj/project.pbxproj
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+
+# Go
+Go/mihomo-bridge/vendor/
+
+# Framework (built from Rust source)
+Framework/MihomoCore.xcframework/
+
+# Rust build artifacts
+Rust/mihomo-ffi/target/
+
+# Release artifacts
+*.dmg
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# CocoaPods / SPM
+Pods/
+.build/
+
+# Secrets
+*.mobileprovision
+*.p12
+*.cer
+
+# Fastlane
+fastlane/.env*
+fastlane/report.xml
+fastlane/README.md
+fastlane/metadata/review_information/
+
+# App Store Connect keys
+*.p8
+
+# Screenshots (generated)
+screenshots/
+
+# Bundler
+vendor/bundle/
+.bundle/
+
+# Local build settings (contains DEVELOPMENT_TEAM)
+Local.xcconfig
+
+# Firebase config (contains API keys / project identifiers)
+GoogleService-Info.plist
+
+# Claude Code
+CLAUDE.md
+.claude/
+docs/superpowers/
+BuildDerivedData/

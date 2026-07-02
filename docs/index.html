@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BaoLianDeng — macOS VPN Proxy App Powered by Mihomo</title>
+<meta name="description" content="BaoLianDeng is a macOS VPN proxy app powered by Mihomo (Clash Meta) using NETransparentProxyProvider for high-performance socket-level proxying, with subscription management, traffic analytics, and a built-in config editor.">
+<style>
+:root {
+  --primary: #4A5AB5;
+  --primary-dark: #3A4A9F;
+  --primary-light: #6B7AD4;
+  --bg: #ffffff;
+  --bg-alt: #f5f6fa;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --card-bg: #ffffff;
+  --card-border: #e8e8f0;
+  --code-bg: #f0f1f7;
+  --footer-bg: #1a1a2e;
+  --footer-text: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f1a;
+    --bg-alt: #1a1a2e;
+    --text: #e8e8f0;
+    --text-secondary: #aaa;
+    --card-bg: #1e1e32;
+    --card-border: #2e2e48;
+    --code-bg: #1e1e32;
+    --footer-bg: #0a0a14;
+    --footer-text: #888;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 64px 24px 64px;
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-icon {
+  width: 112px;
+  height: 112px;
+  border-radius: 26px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.hero h1 .hero-version {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+  position: relative;
+  top: -6px;
+  transition: background 0.15s;
+}
+
+.hero h1 .hero-version a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero h1 .hero-version:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.hero .tagline {
+  font-size: 1.18rem;
+  opacity: 0.92;
+  margin-bottom: 28px;
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: #fff;
+  color: var(--primary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline:hover {
+  border-color: #fff;
+}
+
+.btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Promo video — sits in its own band below the hero, matching the
+   .section content column width so it lines up with the cards below.
+   Autoplays muted + looped on any device that allows it; users can
+   scrub or pause via the native controls. */
+.promo {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+.promo-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0f0f1a;
+  /* Two-layer shadow: a tight inner ring keeps the frame crisp on the
+     hero gradient, a wide soft drop anchors it on the page below. */
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 32px 80px rgba(15, 15, 26, 0.45),
+    0 8px 24px rgba(0, 0, 0, 0.22);
+}
+.promo-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.promo-caption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+@media (max-width: 720px) {
+  .promo { padding: 40px 20px; }
+  .promo-frame { border-radius: 12px; }
+}
+
+/* Section */
+.section {
+  padding: 80px 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+  scroll-margin-top: 24px;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+.section-alt .section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 56px;
+  font-size: 1.1rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 28px 28px 32px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(74, 90, 181, 0.4);
+  box-shadow: 0 10px 28px rgba(74, 90, 181, 0.12);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(74, 90, 181, 0.12);
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .feature-icon {
+    background: rgba(107, 122, 212, 0.18);
+    color: var(--primary-light);
+  }
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* Screenshots */
+.screenshots-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 8px 0 24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshots-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.screenshots-scroll::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 3px;
+}
+
+.screenshot-item {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.screenshot-item img {
+  height: 520px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  .screenshot-item img {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.screenshot-label {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Install */
+.install-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.install-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.install-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.install-card p, .install-card ol {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.install-card ol {
+  padding-left: 20px;
+}
+
+.install-card ol li {
+  margin-bottom: 6px;
+}
+
+.install-card a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.install-card a:hover {
+  text-decoration: underline;
+}
+
+.source-url-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: stretch;
+}
+
+.source-url {
+  flex: 1;
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.8rem;
+  padding: 10px 12px;
+  background: var(--code-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copy-btn {
+  padding: 10px 16px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.copy-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.copy-btn.copied {
+  background: #2ecc71;
+  color: #fff;
+  border-color: #2ecc71;
+}
+
+/* Footer */
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 20px;
+  }
+
+  .hero-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 22px;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h1 .hero-version {
+    display: inline-block;
+    margin-left: 8px;
+    top: -3px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.02rem;
+    margin-bottom: 24px;
+  }
+
+  .section {
+    padding: 56px 20px;
+  }
+
+  .section-alt .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 36px;
+  }
+
+  .screenshot-item img {
+    height: 400px;
+  }
+
+  .source-url-wrapper {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+  <img src="images/AppIcon.png" alt="BaoLianDeng App Icon" class="hero-icon">
+  <h1>BaoLianDeng <span class="hero-version"><a href="https://github.com/madeye/BaoLianDeng/releases/tag/v5.5">v5.5</a></span></h1>
+  <p class="tagline">A macOS VPN proxy powered by Mihomo (Clash Meta), built on NETransparentProxyProvider for socket-level routing.</p>
+  <div class="hero-buttons">
+    <a href="https://github.com/madeye/BaoLianDeng/releases/download/v5.5/BaoLianDeng-5.5.pkg" class="btn btn-primary">
+      <svg viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14ZM7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"/></svg>
+      Download PKG
+    </a>
+    <a href="https://github.com/madeye/BaoLianDeng" class="btn btn-outline">
+      <svg viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+      GitHub
+    </a>
+  </div>
+  </div>
+</section>
+
+<!-- Promo video -->
+<section class="promo" aria-label="Product overview video">
+  <div class="promo-frame">
+    <video
+      src="bld-promo.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      controls
+      aria-label="BaoLianDeng product overview"
+    ></video>
+  </div>
+  <p class="promo-caption">22-second tour</p>
+</section>
+
+<!-- Features -->
+<section id="features" class="section">
+  <h2 class="section-title">Features</h2>
+  <p class="section-subtitle">A native macOS proxy client built differently</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x26A1;</span>
+      <h3>Transparent Proxy</h3>
+      <p>Built on NETransparentProxyProvider for socket-level flow interception with dual-path DNS (DoH via remote proxy for clean resolution, local DNS for smart rule matching).</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x2699;&#xFE0F;</span>
+      <h3>Go-Powered Engine</h3>
+      <p>Upstream Mihomo (Clash Meta) compiled as a native xcframework via cgo c-archive — no patches, no external binaries.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x1F517;</span>
+      <h3>Subscription Management</h3>
+      <p>Add, refresh, and switch between proxy subscriptions. Supports Clash YAML and base64 formats with usage tracking.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x1F310;</span>
+      <h3>Smart Proxy Routing</h3>
+      <p>Browse nodes with latency indicators, switch proxy groups on the fly, and choose between rule, global, and direct modes.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x1F4CA;</span>
+      <h3>Traffic Analytics</h3>
+      <p>Daily bar charts, session stats, and monthly summaries for real-time proxy traffic monitoring.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon" aria-hidden="true">&#x1F4F1;</span>
+      <h3>Per-App Proxy</h3>
+      <p>Choose which apps go through the proxy or bypass it. Allowlist and blocklist modes with a native macOS app picker.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Install -->
+<div class="section-alt">
+<section id="install" class="section">
+  <h2 class="section-title">Installation</h2>
+  <p class="section-subtitle">Two paths — grab the signed installer, or build it from source.</p>
+  <div class="install-methods">
+    <div class="install-card">
+      <h3>&#x1F4E5; Download PKG</h3>
+      <ol>
+        <li>Download <a href="https://github.com/madeye/BaoLianDeng/releases/download/v5.5/BaoLianDeng-5.5.pkg"><code>BaoLianDeng-5.5.pkg</code></a></li>
+        <li>Open the PKG installer and follow the prompts</li>
+        <li>Launch from Applications</li>
+        <li>Enable the network extension: <strong>System Settings &rarr; General &rarr; Login Items &amp; Extensions &rarr; Network Extensions</strong> &rarr; toggle on <strong>BaoLianDeng</strong></li>
+      </ol>
+    </div>
+    <div class="install-card">
+      <h3>&#x1F527; Build from Source</h3>
+      <ol>
+        <li>Clone the repo and install Go 1.23+</li>
+        <li>Copy <code>Local.xcconfig.template</code> to <code>Local.xcconfig</code> and set your team ID</li>
+        <li>Run <code>make framework</code> to build MihomoCore.xcframework</li>
+        <li>Open <code>BaoLianDeng.xcodeproj</code> in Xcode and build (Cmd+R)</li>
+      </ol>
+      <p style="margin-top: 8px"><a href="https://github.com/madeye/BaoLianDeng#build-from-source">See full instructions in README &rarr;</a></p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/madeye/BaoLianDeng">GitHub</a>
+    <a href="https://github.com/madeye/BaoLianDeng/releases">Releases</a>
+    <a href="https://github.com/MetaCubeX/mihomo">Mihomo</a>
+    <a href="https://github.com/madeye/BaoLianDeng/blob/main/LICENSE">GPL-3.0 License</a>
+  </div>
+  <p>&copy; 2026 BaoLianDeng. Powered by <a href="https://github.com/MetaCubeX/mihomo">Mihomo</a> (Clash Meta).</p>
+</footer>
+
+</body>
+</html>
